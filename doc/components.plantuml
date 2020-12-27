@@ -1,0 +1,12 @@
+@startuml Components
+
+component Agent
+component Collector
+component Commander
+component Visualizer
+
+Agent -> Collector : report data to
+Commander -> Agent : instruct
+Collector <- Visualizer : get data
+
+@enduml
